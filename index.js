@@ -1,7 +1,7 @@
 function fetchBooks() {
-  fetch("https://anapioficeandfire.com/api/books")
+  return fetch("https://anapioficeandfire.com/api/books")
   .then(res => res.json())
-  .then(res => renderBooks(res));
+  .then(books => renderBooks(books));
 }
 
 function renderBooks(books) {
